@@ -1,6 +1,9 @@
 // kintamieji (variables)
 // kintamasis - atminties vieta, kurioje saugoma infomacija
 // 1. let - kintamasis, kurio reikšmė gali būti keičiama
+
+// Skaičius string'ai - duomenu ipai
+
 let Amzius = 26;
 
 console.log('Marta' + ' ' + 'Mano amžius:' + Amzius);

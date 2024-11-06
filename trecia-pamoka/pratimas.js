@@ -18,19 +18,23 @@ console.log(plotas);
 // 3 uždavinys
 
 let il = 5;
-let pl = 5;
+let kvadratoPlotas = il * il;
 
-console.log('Kvadrato plotas: ' + il * pl);
+console.log(`Kvadrato plotas: ${kvadratoPlotas} cm`);
 
 // 4 užduotis
 
-let Vardas = 'Marta';
+const vardas = 'Vardenis';
+const sakinys = `Labas, ${vardas}`;
+console.log(sakinys);
 
-console.log('Labas, ' + Vardas);
+// let Vardas = 'Marta';
 
-Vardas = 'Simona';
+// console.log('Labas, ' + Vardas);
 
-console.log('Labas, ' + Vardas);
+// Vardas = 'Simona';
+
+// console.log('Labas, ' + Vardas);
 
 // 5 užduotis
 
@@ -42,36 +46,43 @@ console.log(Skaicius * 2);
 
 // 6 Užduotis
 
-let Ūgis = 173;
+let Ūgis = 1.73;
 let Svoris = 68;
+kmi = Svoris / (Ūgis * Ūgis);
+fixedKmi = kmi.toFixed(2);
 
-Svoris = 68 * 68;
+// console.log('KMI ' + Svoris / (Ūgis * Ūgis));
 
-console.log(Svoris / Ūgis);
+console.log(`KMI ${fixedKmi}`);
+
+// Backtikus naudojam kaip i strigus reik ideti kintamuosius
 
 // 7 Užduotis
 
 let Draugai = 6;
+let NaujiDraugai = 5;
+let drauguSuma = Draugai + NaujiDraugai;
 
-Draugai = 6;
-
-console.log(Draugai + 5);
+console.log(`Draugu skaicius: ${drauguSuma}`);
 
 // 8 Užduotis
 
 let Kava = 5;
 let Kaina = 5.5;
+let valiuta = 'Dollar';
+let kavosUzsakymoSuma = Kava * Kaina;
 
-console.log('5-ių pakelių kavos kaina: ' + Kaina * Kaina + 'Eur');
+console.log(`Kavos uzsakymo suma: ${kavosUzsakymoSuma} ${valiuta}`);
+// console.log('5-ių pakelių kavos kaina: ' + Kaina * Kaina + 'Eur');
 
 // 9 užduotis
 
 let KainaBePVM = 20;
-let PVM = 21;
+let PVM = 0.21;
 
-PVM = 4.2;
+let kainaSuPvm = KainaBePVM * PVM + KainaBePVM;
 
-console.log(KainaBePVM + PVM);
+console.log(`${kainaSuPvm}`);
 
 // 10 užduotis
 
@@ -79,9 +90,9 @@ let nuvaziuotiKm = 100;
 let kuroSanauduos = 6;
 let kuroKaina = 1.233;
 
-KilometroKaina = (kuroSanauduos / nuvaziuotiKm) * kuroKaina;
+let KilometroKaina = (nuvaziuotiKm / 100) * kuroSanauduos * kuroKaina;
 
-console.log(KilometroKaina * 600 + ' Eur');
+console.log(`Keliones kaina: ${KilometroKaina.toFixed(2)}`);
 
 // 11 užduotis
 
@@ -91,3 +102,13 @@ let Mėnuo = 12;
 console.log('5 metai, turi: ' + Metai * Mėnuo + ' mėnesių.');
 
 // 12 užduotis
+
+let temperaturaC = 20;
+let temperatureF = (temperaturaC * 9) / 5 + 32;
+
+console.log('Temperatura Farenheito skaleje ' + temperatureF + 'F');
+
+// pakelti kubu
+
+let skaicius1 = 5;
+console.log(skaicius1 ** 10);

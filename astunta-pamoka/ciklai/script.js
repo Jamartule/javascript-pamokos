@@ -1,4 +1,5 @@
-//Ciklai - for
+// /SVARBUUUU
+// \/Ciklai - for
 
 //Sis ciklas naudojamas, kai yra zinoma kiek kartu jis bus vykdomas
 // visada ciklas prasides : for (kintamasis; salyga; operacija) { viduje bus parasytas kodas}
@@ -67,5 +68,13 @@ for (let i = 1; i <= 5; i++) {
     case 5:
       console.log('penki');
       break;
+  }
+}
+
+// let lygu skaiciui kuris
+
+for (let i = 5; i <= 50; i += 5) {
+  if (i === 20) {
+    console.log('i');
   }
 }

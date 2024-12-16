@@ -61,6 +61,24 @@ let kelione = {
 kelione.parodykInformacija();
 
 //7
+function generateRandomNumbers() {
+  let result = '';
+
+  for (let i = 0; i < 10; i++) {
+    let number = Math.floor(Math.random() * 100) + 1;
+    let gap = i < 9 ? ' ' : '';
+
+    result += number + gap;
+  }
+
+  console.log(result);
+}
+
+for (let i = 0; i < 5; i++) {
+  generateRandomNumbers();
+}
+
+//7
 
 function generuotiSkaicius() {
   let skaiciai = [];
@@ -81,7 +99,7 @@ for (let i = 0; i < 5; i++) {
 //8
 
 function generuokAtsitiktiniSkaiciu() {
-  return Math.floor(Math.random() * 100) + 1;
+  return Math.floor(Math.random() * 10) + 1;
 }
 
 for (let i = 0; i < 10; i++) {
@@ -117,3 +135,58 @@ function palyginkSkaicius(skaicius1, skaicius2) {
 
 palyginkSkaicius(10, 5);
 palyginkSkaicius(3, 7);
+//////////////////////
+//funkcija tikrina temperatura
+
+function turnOnWipers() {
+  // ijungia valytuvus
+}
+
+function turnOnAc() {
+  // Ijungtu kondicionieriu
+}
+
+function createWeatherAlert(temperature, isRaining) {
+  if (temperature < 0) {
+    return 'Ispejimas: lauke minusas, atsargiai vairuokite!';
+  } else if (isRaining) {
+    turnOnWipers();
+    return 'Ispejimas: lauke lyja, slidus kelias!';
+  } else if (temperature > 30) {
+    turnOnAc();
+    return 'Ispejimas: Lauke karsta! nepalikite augintiniu';
+  } else {
+    return '';
+  }
+}
+
+console.log(createWeatherAlert());
+
+/////
+function isShopOpen() {
+  const currentHour = new Date().getHours();
+
+  if (currentHour >= 9 && currentHour <= 20) {
+    return 'Parduotuve yra atidaryta!';
+  } else {
+    return 'Parduotuve yra uzdaryta.';
+  }
+}
+
+console.log(isShopOpen());
+
+//
+
+function checkTicketPrice(age) {
+  switch (age) {
+    case 1:
+      return 'kaina 1 euras';
+      break;
+    case 2:
+      return 'kaina 2 euurai';
+      break;
+    default:
+      return 'Pilna kaina :10 eur';
+  }
+}
+console.log(checkTicketPrice(1));
